@@ -1,3 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body {
+    background-color: white;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+}
+.home-title {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.book, .join {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+}
+.msg h2 {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+.msg p {
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+.msg {
+    line-height: 1.5em;
+    padding: 35px;
+}
+#logo_link {
+    padding-top: 5px;
+}
+nav a {
+    padding: 35px;
+}
+.icon {
+    padding-top: 10px;
+}
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
 #content {
     max-width: 1600px;
     margin: 0 auto;
