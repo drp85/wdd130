@@ -141,29 +141,32 @@
 /* Activity 5 styles */ 
 .content5 {
   /* This is the parent of the activity 5 boxes. */
-  height: 400px;
+  height: 100%;
 }
 .red5 { 
-  width: 100px; 
+  width: 100%; 
   height: 100px; 
-  background-color: red; 
+  background-color: red;
+  top: 0;
+  left: 0; 
 } 
 .green5 { 
   width: 100px; 
   height: 100px; 
   background-color: green; 
+  float: left;
+  z-index: 2;
 
 } 
 .yellow5 {
-  width: 100px; 
-  height: 100px; 
+  width: 100%; 
   background-color: gold; 
-
 } 
 .blue5 {
-  width: 100px; 
+  width: 100%; 
   height: 100px; 
   background-color: blue; 
+
 } 
 /* Activity 6 styles */ 
 .content6 {
