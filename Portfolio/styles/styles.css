@@ -4,16 +4,13 @@ Fonts are separated by a | */
 /* @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato'); */
 
 :root {
-
   --primary-color: #4dd6cf   ;
   --secondary-color: #2b65e2 ;
   --accent1-color: #a70067;
   --accent2-color: white;
 
-
   --heading-font: Arial, sans-serif;
   --paragraph-font: Arial, sans-serif;
-
 
   --headline-color-on-white: #237543;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
