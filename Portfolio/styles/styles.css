@@ -71,11 +71,17 @@ hr {
 }
 
 header {
-  padding: 1em;
+  padding: 5px;
   text-align: center;
   color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
   top: 0;
+  position: sticky;
+  z-index: 100;
+  width: 100vw;
+  left: 0;
+  margin-left: calc(-50vw + 50%);
+  box-sizing: border-box;
 }
 
 header > h1, header > h2 {
@@ -133,6 +139,15 @@ p {
 p.colored {
   background-color: var(--paragraph-background-color);
   color: var(--paragraph-color-on-color);
+  border-radius: 0.5em;
+}
+
+p.colored a {
+    color: #e0e0ff; /* or any light color you prefer */
+    text-decoration: underline;
+}
+p.colored a:hover {
+  color: var(--accent1-color);
 }
 
 nav {
@@ -140,23 +155,21 @@ nav {
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
-  top: 0;
-}
-nav  {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-}
-
-header, nav {
-  position: sticky;
-  top: 0;
-  z-index: 100;
   width: 100vw;
   left: 0;
   margin-left: calc(-50vw + 50%);
   box-sizing: border-box;
+  z-index: 1; 
+  position: relative; 
 }
+
+nav  {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
 
 nav a {
   padding:1em;
