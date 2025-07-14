@@ -40,6 +40,7 @@ body {
     margin: 0 auto;
     font-size: 18px;
     text-align: center;
+    overflow-x: hidden;
 }
 
 main {
@@ -248,4 +249,49 @@ footer p {
 }
 .github-btn:hover {
     background-color: #444;
+}
+
+.music-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2em;
+    margin: 3em 0;
+}
+
+.music-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 120px;
+    margin-bottom: 2em;
+}
+
+.music-item.left {
+    justify-content: flex-start;
+}
+
+.music-item.right {
+    align-items: flex-end;
+}
+
+.music-item .colored {
+    width: 70vw;
+    max-width: 600px;
+    border-radius: 1em;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 1.5em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.music-grid img {
+    border-radius: 1em;
+    height: 100%;
+    width: auto;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.music-item > div {
+    align-items: stretch !important;
 }
