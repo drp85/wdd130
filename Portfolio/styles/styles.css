@@ -191,6 +191,16 @@ footer p {
   color: inherit;
 }
 
+.cert-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.cert-images img {
+    margin: 0;
+}
 /* .sitemap {
   display: grid;
   justify-content: center;
