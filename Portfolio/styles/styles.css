@@ -201,6 +201,17 @@ footer p {
 .cert-images img {
     margin: 0;
 }
+
+.github-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.github-images img {
+    margin: 0;
+}
 /* .sitemap {
   display: grid;
   justify-content: center;
