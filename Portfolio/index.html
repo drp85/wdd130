@@ -37,8 +37,35 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Dallin Pratt</p>
-<a href="site-plan.html">Site Plan</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Plan/Repo</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/Portfolio/site-plan.html">Site Plan</a>
+                    <a href="https://github.com/drp85/wdd130">GitHub Repo</a>
+                </div>
+        </div>
+            <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+            </script>
+            <p>&copy; 2025 Dallin Pratt</p>
     </footer>
 </body>
 </html>
