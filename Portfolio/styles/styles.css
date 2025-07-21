@@ -205,6 +205,11 @@ footer p {
   color: inherit;
 }
 
+footer a {
+  color: var(--nav-link-color);
+  background-color: inherit;
+}
+
 .cert-images {
     display: flex;
     justify-content: center;
