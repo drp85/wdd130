@@ -210,6 +210,15 @@ footer a {
   background-color: inherit;
 }
 
+.profile-pic {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.cert-images img {
+    max-width: 200px;
+}
+
 .cert-images {
     display: flex;
     justify-content: center;
@@ -352,3 +361,60 @@ footer a {
 }
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+/* --- Media Queries for Mobile --- */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .header-flex {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    header > h1 {
+        font-size: 2rem;
+        margin: 0.2em 0;
+    }
+
+    nav {
+        flex-direction: column;
+        line-height: normal;
+    }
+
+    nav a {
+        padding: 1em;
+        border-bottom: 1px solid var(--nav-hover-background-color);
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+
+    .cert-images {
+        flex-direction: column;
+    }
+
+    .programming-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .music-grid {
+        gap: 1em;
+        margin: 2em 0;
+    }
+
+    .music-item {
+        align-items: center;
+    }
+
+    .music-item.right {
+        align-items: center;
+    }
+
+    .music-item .colored {
+        width: 90vw;
+        font-size: 1em;
+    }
+}
