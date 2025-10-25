@@ -101,6 +101,18 @@ header > h1, header > h2 {
   margin: 0;
 }
 
+.header-logo {
+    max-width: 100px;
+}
+
+.large-logo {
+    max-width: 400px;
+}
+
+.medium-logo {
+    max-width: 200px;
+}
+
 p {
   color: var(--paragraph-color-on-white);
   padding: 1em;
@@ -144,7 +156,7 @@ p.colored {
 }
 
 p.colored a {
-    color: #e0e0ff; /* or any light color you prefer */
+    color: #f0f2f5;
     text-decoration: underline;
 }
 p.colored a:hover {
@@ -230,15 +242,13 @@ footer a {
     margin: 0;
 }
 
-.github-images {
-    display: flex;
+.card-link {
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     margin-top: 1em;
-}
-
-.github-images img {
-    margin: 0;
+    text-decoration: none;
+    gap: 0.5em;
 }
 
 .programming-grid {
@@ -308,6 +318,25 @@ footer a {
 }
 .music-item > div {
     align-items: stretch !important;
+}
+.music-content {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.music-content .colored {
+    flex: 1;
+}
+.music-img {
+    max-width: 300px;
+}
+
+.music-item:nth-child(1) .music-img {
+    max-width: 200px;
+}
+
+.music-item:nth-child(3) .music-img {
+    max-width: 180px;
 }
 
 /* Dropdown Button */

@@ -8,8 +8,8 @@
 <body>
     <header>
         <div class="header-flex">
-            <img src="../images/drp.png" alt="Logo image" style="max-width:100px;">
-            <h1>Dallin R Pratt</h1>
+            <img src="../images/drp.png" alt="drp Site Logo" class="header-logo">
+            <h1>Dallin Pratt</h1>
         </div>
     </header>
     <nav>
@@ -23,7 +23,7 @@
             <h2>History</h2>
             <p>My first experiences with coding were with <a href="https://scratch.mit.edu/" target="_blank">Scratch</a> and Lego Mindstorms EV3 in 6th and 7th grade. In 8th and 9th grade, I began to learn JavaScript in order to make Discord bots and Minecraft plugins.</p>
             <a href="https://scratch.mit.edu/" target="_blank">
-                <img src="../images/Scratch_Logo.svg.png" alt="Scratch Logo (© MIT Media Lab)" style="max-width:400px;">
+                <img src="../images/Scratch_Logo.svg.png" alt="Scratch Logo (© MIT Media Lab)" class="large-logo">
             </a>
             <small>&copy; MIT Media Lab</small>
         </section>
@@ -35,30 +35,26 @@
             <p class="colored">
                 Check out <a href="https://threadmapz.com/" target="_blank">ThreadMapz</a>, a notes mapping application for the iPad, designed by my father and developed by Benjamin Pratt (one of my brothers).
             </p>
-            <div style="display: flex; align-items: center; justify-content: center; gap: 1em;">
-                <a href="https://threadmapz.com/" target="_blank">
-                    <img src="../images/Threadmapz-logo.jpg" alt="ThreadMapz" style="max-width:200px;">
-                </a>
-                <button onclick="window.open('https://threadmapz.com/', '_blank')" class="github-btn">ThreadMapz.com</button>
-            </div>
+            <a href="https://threadmapz.com/" target="_blank" class="card-link">
+                <img src="../images/Threadmapz-logo.jpg" alt="ThreadMapz Logo" class="medium-logo">
+                <span class="github-btn">ThreadMapz.com</span>
+            </a>
             <small>&copy; ThreadMapz</small>
         </section>
         <section>
             <h2>Projects</h2>
             <p class="colored">Currently, most of my public work is available at on my GitHub page: </p>
-            <div class="github-images">
-                <a href="https://github.com/drp85" target="_blank">
-                    <img src="../images/github-mark.png" alt="GitHub Mark (© GitHub)" style="max-width:200px;">
-                </a>
-                <button onclick="window.open('https://github.com/drp85', '_blank')" class="github-btn">Github.com/drp85</button>
-            </div>
+            <a href="https://github.com/drp85" target="_blank" class="card-link">
+                <img src="../images/github-mark.png" alt="GitHub Mark (© GitHub)" class="medium-logo">
+                <span class="github-btn">Github.com/drp85</span>
+            </a>
             <small>&copy; GitHub</small>
         </section>
         <section>
             <h2>Current Projects</h2>
             <p>I am currently working on an anonymous blog, which is hosted on a Raspberry Pi, and was developed while learning the skills in the WDD130 course at BYU-Idaho. It will not be linked here, as it is meant to be anonymous (I am also struggling to get it to stay on the WWW and DNS, though it worked for a little bit at least).</p>
             <a href="https://www.ismycomputeronfire.com/" target="_blank">
-                <img src="../images/Anonymous_emblem.svg.png" alt="Anonymous_emblem" style="max-width:200px;">
+                <img src="../images/Anonymous_emblem.svg.png" alt="Anonymous mask emblem" class="medium-logo">
             </a>
         </section>
     </div>
@@ -70,6 +66,11 @@
                     <a href="https://drp85.github.io/wdd130/Portfolio/site-plan.html">Site Plan</a>
                     <a href="https://github.com/drp85/wdd130">GitHub Repo</a>
                 </div>
+            <button class="dropbtn" aria-haspopup="true" aria-expanded="false" aria-controls="myDropdown">Plan/Repo</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="https://drp85.github.io/wdd130/Portfolio/site-plan.html">Site Plan</a>
+                <a href="https://github.com/drp85/wdd130">GitHub Repo</a>
+            </div>
         </div>
             <script>
                 function myFunction() {
